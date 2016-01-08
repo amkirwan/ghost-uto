@@ -1,0 +1,31 @@
+@import "normalize";
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+
+.main-header {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #aaa;
+  background: #eee;
+}
+
+.logo {
+  overflow: hidden;
+  width: 539px;
+  height: 71px;
+  @include background(url("../images/uniteandtakeover-masthead-2.png") center no-repeat #eee);
+  background-size: contain;
+  margin: 0 auto;
+  ::before {
+    content: "Unite & Takeover"; 
+  }
+  @include media(screen and max-width 480px) {
+    width: 310px;
+    height: 103px;
+    @include background(url("../images/uniteandtakeover-masthead.png") center no-repeat #eee);
+  }
+}
+

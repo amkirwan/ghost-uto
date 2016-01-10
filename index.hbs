@@ -13,6 +13,10 @@
 <main id="content" class="content" role="main">
 
     {{! The tag below includes the post loop - partials/loop.hbs }}
-    {{> "loop"}}
+  <div class="posts-wrap">
+    {{#foreach posts}}
+      {{> post}}
+    {{/foreach}}
+
 
 </main>

@@ -1,11 +1,12 @@
 <article class="{{post_class}}">
   <header class="post-header">
       <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-      <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+      <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
   </header>
   <section class="post-content">
     {{content}}
   </section>
   <footer class="post-meta">
+    {{tags separator=" | " prefix="Tagged in:"}}
   </footer>
 </article>

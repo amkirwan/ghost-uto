@@ -228,3 +228,52 @@ article.post {
     }
   }
 }
+
+footer.site-footer {
+  
+  $sans-serif: 'Questrial', sans-serif;
+  $serif: 'Sanchez', serif;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $footer-background: desaturate(darken($action-color, 20%), 30%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  font-family: $sans-serif;
+  font-size: 1.45em;
+  line-height: 1.5;
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+
+  .colophon-wrap {
+    @include outer-container;
+    font-size: 0.79310344em;
+  }
+  .colophon {
+    @include span-columns(8);
+    @include shift(2);
+    color: #dddcd8;
+    .footer-logo {
+      margin-bottom: 2em;
+      text-align: center;
+      overflow: hidden;
+      width: 539px;
+      height: 71px;
+      @include background(url("../images/uniteandtakeover-masthead-2.png") center no-repeat transparent);
+      background-size: contain;
+      margin: 0 auto;
+      ::before {
+        content: "Unite & Takeover"; 
+      }
+      @include media(screen and max-width 480px) {
+        width: 310px;
+        height: 103px;
+        @include background(url("../images/uniteandtakeover-masthead.png") center no-repeat transparent);
+      }
+    }
+  }
+}

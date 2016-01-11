@@ -196,17 +196,32 @@ article.post {
   p.author {
     font-family: $sans-serif;
   }
+
+  footer {
+    color: $footer-color;
+    padding: 1em;
+    border-radius: 4px;
+    border: 1px solid $footer-border-color;
+    background: $footer-bg-color;
+    font-size: 1.15em;
+    a {
+      margin: 0 0.5em; 
+    }
+  }
 }
 
 
 .pagination {  
   text-align: center;
-  margin-bottom: 2em;
+  margin: 2em 0;
+  font-size: 1.45em;
   a.page-newer, a.page-older {
     color: #fff;
+    font-size: 0.79310344em;
     padding: 1em;
     margin: 0 1em;
     border-radius: 4px;
+    border: 1px solid darken(#56aaff, 5%);
     background-color: #56aaff;
     &:hover {
       background-color: darken(#56aaff, 10%); 

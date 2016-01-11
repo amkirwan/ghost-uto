@@ -56,7 +56,10 @@ article.post {
   @include clearfix;
   font-family: $sans-serif;
   text-align: left;
-  margin-top: 1em;
+  margin-top: 4em;
+  &:first-child {
+    margin-top: 0;
+  }
 
   h1, h2, h3, p {
     margin: 0;

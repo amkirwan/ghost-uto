@@ -52,6 +52,9 @@ article.post {
   $base-font-color: $dark-gray !default;
   $sans-serif: 'Questrial', sans-serif;
   $serif: 'Sanchez', serif;
+  $footer-color: #777;
+  $footer-bg-color: #ddd;
+  $footer-border-color: darken($footer-bg-color, 10%);
 
   @include clearfix;
   font-family: $sans-serif;

@@ -4,27 +4,30 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 {{! Everything inside the #post tags pulls data from the post }}
+<header class="main-header"> 
+  {{> header}}
+</header>
+
 {{#post}}
+  <main id="content" class="content" role="main">
+    <div class="post-wrap post">
+      {{> post}}
+      <nav class="pagination" role="navigation">
+        <div class="pag-wrap">
+          {{#prev_post}}
+          
+          <a href="{{url}}" class="page-older">Previous Post:<span class="title">{{title}}</span></a>
+          {{/prev_post}}
 
-</main>
-
-<aside class="read-next">
-    {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
-            <p>{{excerpt words="19"}}&hellip;</p>
-        </section>
-    </a>
-    {{/next_post}}
-    {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
-            <p>{{excerpt words="19"}}&hellip;</p>
-        </section>
-    </a>
-    {{/prev_post}}
-</aside>
-
+          {{#next_post}}
+            <a href="{{url}}" class="page-newer">Next Post:<span class="title">{{title}}</span></a>
+          {{/next_post}}
+        </div>
+      </nav>
+    </div>
+  </main>
 {{/post}}
+
+<footer class="site-footer" role="contentinfo">
+  {{> site-footer}}
+</footer>

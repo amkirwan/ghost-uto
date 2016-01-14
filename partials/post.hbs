@@ -4,9 +4,11 @@
       <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
   </header>
   <section class="post-content">
-    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&hellip;</a></p>
+    {{content}} 
   </section>
   <footer class="footer post-meta">
-    {{tags separator="&#124;" prefix="Tagged in:"}}
+    <div class="texture">
+      {{tags separator="&#124;" prefix="Tagged in:"}}
+    </div>
   </footer>
 </article>

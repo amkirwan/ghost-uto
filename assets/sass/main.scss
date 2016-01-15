@@ -122,16 +122,26 @@ video.full {
       font-size: 2.6em;
     }
   }
+  h1.page-title {
+    text-align: center;
+  }
 
   h2 {
     font-family: $serif;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.4em;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1.7em;
     @include media($medium-screen) {
-      font-size: 1.3em;
+      font-size: 2.0em;
     }
+  }
+
+  h3 {
+    font-family: $serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin-bottom: 0.4em;
   }
 
   a {
@@ -181,14 +191,6 @@ video.full {
     font-style: normal;
     padding: 0.1em 0.4em;
     white-space: nowrap;
-  }
-
-  h3 {
-    font-family: $serif;
-    font-size: 1.4em;
-    font-weight: 400;
-    line-height: 1.3em;
-    margin-bottom: 0.4em;
   }
 
   p.date {
@@ -276,6 +278,7 @@ footer.site-footer {
   width: 100%;
   padding-bottom: 2em;
   border-bottom: 5px solid $yellow;
+  margin-top: 2em;
   @include media($medium-screen) {
     font-size: 1.11904761904762em;
   }
@@ -283,6 +286,8 @@ footer.site-footer {
   @include outer-container;
 
   .colophon-wrap {
+    @include clearfix();
+    padding-top: 1em;
     @include media($medium-screen) {
       @include span-columns(10);
       @include shift(1);
@@ -318,4 +323,13 @@ footer.site-footer {
       }
     }
   }
+}
+
+
+// about page
+
+img.me {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
 }

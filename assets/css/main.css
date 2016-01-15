@@ -605,14 +605,13 @@ video.full {
   border-bottom: 1px solid #DDD; }
 .posts footer, .post footer, .page-data footer {
   font-size: 1.25em;
-  width: 100%; }
-  .posts footer .texture, .post footer .texture, .page-data footer .texture {
-    padding-left: 0.5em;
-    border-radius: 4px;
-    line-height: 2.1;
-    height: 2.0em; }
-    .posts footer .texture a, .post footer .texture a, .page-data footer .texture a {
-      padding: 0 0.25em; }
+  width: 100%;
+  background: #DDD;
+  padding: 0.5em 2.35765%;
+  border-radius: 6px;
+  border: 1px solid #c4c4c4; }
+  .posts footer a, .post footer a, .page-data footer a {
+    padding: 0 0.25em; }
 .posts h1, .posts h2, .posts h3, .posts p, .post h1, .post h2, .post h3, .post p, .page-data h1, .page-data h2, .page-data h3, .page-data p {
   margin: 0; }
 .posts .page-header, .post .page-header, .page-data .page-header {
@@ -682,6 +681,9 @@ video.full {
   font-size: 0.9em;
   font-style: italic;
   margin-bottom: 0.3em; }
+
+article.post {
+  border-bottom: 0; }
 
 .pagination {
   font-family: "Questrial", sans-serif;

@@ -749,17 +749,18 @@ footer.site-footer {
   width: 100%;
   padding-bottom: 2em;
   border-bottom: 5px solid #bfbf04;
-  margin-top: 2em;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-top: 2em; }
   @media screen and (min-width: 600px) {
     footer.site-footer {
       font-size: 1.11904761904762em; } }
-  footer.site-footer::after {
-    clear: both;
-    content: "";
-    display: table; }
+  footer.site-footer .site-footer-wrap {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    footer.site-footer .site-footer-wrap::after {
+      clear: both;
+      content: "";
+      display: table; }
   footer.site-footer .colophon-wrap {
     padding-top: 1em; }
     footer.site-footer .colophon-wrap::after {

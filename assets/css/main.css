@@ -796,6 +796,9 @@ footer.site-footer {
       margin-right: 0; }
     footer.site-footer .colophon a {
       color: rgba(255, 255, 255, 0.4); }
+      @media screen and (max-width: 27.5em) {
+        footer.site-footer .colophon a {
+          color: #537fbe; } }
     footer.site-footer .colophon .footer-logo {
       margin-bottom: 2em;
       text-align: center;

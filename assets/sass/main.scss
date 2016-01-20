@@ -3,6 +3,7 @@
 @import "base/base";
 @import "neat/neat";
 
+$small-screen: em(440) !default;
 $medium-screen: em(640) !default;
 $large-screen: em(860) !default;
 
@@ -305,6 +306,9 @@ footer.site-footer {
     color: #dddcd8;
     a {
       color: $footer-link-color;
+      @include media(max-width $small-screen) {
+        color: desaturate($link-color, 10%);
+      }
     }
     .footer-logo {
       margin-bottom: 2em;

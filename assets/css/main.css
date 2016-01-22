@@ -667,14 +667,21 @@ video.full {
   border-right: none;
   border-top: none;
   margin: 1.5em 0; }
-.posts code, .post code, .page-data code {
-  background: #F7F7F7;
-  border-radius: 4.5px;
-  border: 1px solid #E0E0E0;
-  font-size: 0.7em;
-  font-style: normal;
-  padding: 0.1em 0.4em;
-  white-space: nowrap; }
+.posts pre, .post pre, .page-data pre {
+  white-space: pre;
+  overflow: auto;
+  font-family: Inconsolata, monospace, sans-serif;
+  border-radius: 4px;
+  padding: 1em;
+  margin: 0.5em 0;
+  border: 1px solid #e5ddd8;
+  background: #f5f2f0; }
+  .posts pre code, .post pre code, .page-data pre code {
+    width: 100%;
+    font-size: 1em;
+    font-style: normal;
+    white-space: pre-wrap;
+    background: transparent; }
 .posts p.date, .post p.date, .page-data p.date {
   color: rgba(51, 51, 51, 0.4);
   font-family: "Sanchez", serif;

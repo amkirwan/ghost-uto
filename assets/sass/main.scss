@@ -9,6 +9,7 @@ $large-screen: em(860) !default;
 
 $sans-serif: 'Questrial', sans-serif;
 $serif: 'Sanchez', serif;
+$code-fonts: Inconsolata, monospace, sans-serif;
 $base-font-color: $dark-gray;
 $base-line-height: 1.5em; 
 $dark-gray: #333;
@@ -181,14 +182,22 @@ video.full {
     margin: $base-spacing 0;
   }
 
-  code {
-    background: #F7F7F7;
-    border-radius: $base-border-radius * 1.5;
-    border: 1px solid #E0E0E0;
-    font-size: 0.7em;
-    font-style: normal;
-    padding: 0.1em 0.4em;
-    white-space: nowrap;
+  pre {
+    white-space: pre;
+    overflow: auto;
+    font-family: $code-fonts;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 0.5em 0;
+    border: 1px solid darken(#f5f2f0, 8%);
+    background: #f5f2f0;
+    code {
+      width: 100%;
+      font-size: 1em;
+      font-style: normal;
+      white-space: pre-wrap;
+      background: transparent;
+    }
   }
 
   p.date {

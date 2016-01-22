@@ -200,6 +200,19 @@ video.full {
     }
   }
 
+  p {
+    code {
+      white-space: pre;
+      font-size: 0.9em;
+      overflow: auto;
+      font-family: $code-fonts;
+      padding: 0.1em;
+      border-radius: 4px;
+      border: 1px solid darken(#f5f2f0, 8%);
+      background: #f5f2f0;
+    }
+  }
+
   p.date {
     color: transparentize($base-font-color, 0.6);
     font-family: $serif;

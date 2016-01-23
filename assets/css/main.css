@@ -617,7 +617,7 @@ video.full {
 .posts .page-header, .post .page-header, .page-data .page-header {
   margin-top: 1em; }
 .posts h1, .post h1, .page-data h1 {
-  font-family: "Sanchez", serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 1.8em;
   font-weight: 700; }
   @media screen and (min-width: 600px) {
@@ -626,7 +626,7 @@ video.full {
 .posts h1.page-title, .post h1.page-title, .page-data h1.page-title {
   text-align: center; }
 .posts h2, .post h2, .page-data h2 {
-  font-family: "Sanchez", serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 1.8em;
   font-weight: bold;
   line-height: 1.7em; }
@@ -634,7 +634,7 @@ video.full {
     .posts h2, .post h2, .page-data h2 {
       font-size: 2.0em; } }
 .posts h3, .post h3, .page-data h3 {
-  font-family: "Sanchez", serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   line-height: 1.3em;
@@ -649,7 +649,7 @@ video.full {
 .posts p, .post p, .page-data p {
   color: #333;
   line-height: 1.5em;
-  font-family: "Questrial", sans-serif;
+  font-family: "Noto Serif", Georgia, serif;
   font-size: 1.05em;
   line-height: 1.5em;
   margin-bottom: 1em; }
@@ -660,7 +660,10 @@ video.full {
       font-size: 1.45em; } }
 .posts .post-date, .post .post-date, .page-data .post-date {
   color: #aaaaaa;
-  font-style: italic; }
+  font-family: "Noto Serif", Georgia, serif;
+  font-style: italic;
+  font-size: 1.125em;
+  /* 18px */ }
 .posts hr, .post hr, .page-data hr {
   border-bottom: 1px solid #DDD;
   border-left: none;
@@ -673,7 +676,7 @@ video.full {
   font-family: Inconsolata, monospace, sans-serif;
   border-radius: 4px;
   padding: 1em;
-  margin: 0.5em 0;
+  margin: 1.45em 0 !important;
   border: 1px solid #e5ddd8;
   background: #f5f2f0; }
   .posts pre code, .post pre code, .page-data pre code {
@@ -693,7 +696,7 @@ video.full {
   background: #f5f2f0; }
 .posts p.date, .post p.date, .page-data p.date {
   color: rgba(51, 51, 51, 0.4);
-  font-family: "Sanchez", serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 0.9em;
   font-style: italic;
   margin-bottom: 0.3em; }
@@ -702,7 +705,7 @@ article.post {
   border-bottom: 0; }
 
 .pagination {
-  font-family: "Questrial", sans-serif;
+  font-family: "Noto Serif", Georgia, serif;
   font-size: 0.875em;
   /* 14px */
   text-align: center;
@@ -758,7 +761,7 @@ article.post {
     /* 20 / 27.2 = 0.73529411764706em */ }
 
 footer.site-footer {
-  font-family: "Questrial", sans-serif;
+  font-family: "Noto Serif", Georgia, serif;
   font-size: 1.05em;
   line-height: 1.5;
   background: #1c3653;

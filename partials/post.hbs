@@ -6,9 +6,17 @@
   <section class="post-content">
     {{content}} 
   </section>
-  <footer class="footer post-meta">
-    <div class="texture">
-      {{tags separator="&#124;" prefix="Tagged in:"}}
-    </div>
-  </footer>
+  {{#if tags}}
+    <footer class="footer post-meta">
+      <div class="texture">
+        {{tags separator="&#124;" prefix="Tagged in:"}}
+      </div>
+    </footer>
+  {{else}}
+    <footer class="footer post-meta">
+      <div class="texture">
+        Tagged in:
+      </div>
+    </footer>
+  {{/if}}
 </article>

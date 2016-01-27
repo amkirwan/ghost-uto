@@ -601,7 +601,7 @@ video.full {
   max-width: 100%; }
 
 .posts article, .post article, .page-data article {
-  margin-top: 1em;
+  margin-top: 3em;
   border-bottom: 1px solid #DDD; }
 .posts footer, .post footer, .page-data footer {
   font-size: 1.25em;

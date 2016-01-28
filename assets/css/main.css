@@ -601,8 +601,12 @@ video.full {
   max-width: 100%; }
 
 .posts article, .post article, .page-data article {
-  margin-top: 3em;
-  border-bottom: 1px solid #DDD; }
+  border-bottom: 2px solid #DDD; }
+  .posts article:first-child, .post article:first-child, .page-data article:first-child {
+    margin-top: 1em; }
+  @media screen and (min-width: 600px) {
+    .posts article:first-child, .post article:first-child, .page-data article:first-child {
+      margin-top: 3em; } }
 .posts footer, .post footer, .page-data footer {
   font-size: 1.25em;
   width: 100%;

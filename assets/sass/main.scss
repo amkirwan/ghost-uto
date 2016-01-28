@@ -97,7 +97,7 @@ video.full {
     }
     @include media($medium-screen) {
       &:first-child {
-        margin-top: 3em;
+        margin-top: 2em;
       }
     }
   }
